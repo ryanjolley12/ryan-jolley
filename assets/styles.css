@@ -96,35 +96,6 @@ contact me section
 
 resume section 
 
-footer section  */
-
-
-
-
-
-
-footer {
-    background-color: #2a2a2a;
-    padding: 25px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-}
-
-footer h2 {
-    color: #388e8d;
-    font-size: 15px;
-    text-align: center;
-}
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-
-
 section {
     padding: 60px;
 }
