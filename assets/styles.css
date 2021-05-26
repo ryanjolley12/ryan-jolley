@@ -12,14 +12,22 @@ body {
 
 .box {
     background-color: #388e8d;
-    height:auto;
-    width:fit-content;
+    height: 5px auto;
+    width: fit-content;
     display: flex;
     flex-wrap:wrap;
 }
 
+.box-hero {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color:#388e8d;
+    color: #06344e;
+}
+
 header {
-    padding: 15px 35px;
+    padding: 20px 35px;
     background-color: #2a2a2a;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -42,8 +50,8 @@ header a {
 }
 
 header nav {
+    float: right;
     margin: 7px 0;
-    flex: 0 70%;
 }
 
 header nav ul {
@@ -54,9 +62,13 @@ header nav ul {
     list-style: none;
 }
 
+header nav ul li {
+    display: inline;
+}
+
 header nav ul li a {
-    padding: 10px 15px;
     font-size: 1.55vw;
+    margin: 0 20px;
 }
 
 footer {
@@ -71,7 +83,7 @@ footer {
 footer h2 {
     color: #388e8d;
     font-size: 15px;
-    margin: 0;
+    text-align: center;
 }
 
 footer div {
@@ -87,7 +99,7 @@ footer div {
     background-attachment: fixed;
     background-position: 80%;
 }
-.hero-subhead {
+.box h2 {
     color: #06344e;
     font-weight: bold;
 }
@@ -119,12 +131,12 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    flex: 1 30%
 }
 
 .sidebar h2 {
     color: #063f4e;
     font-size: 50px;
-    flex: 1 30%;
 }
 
 .sidebar-inside {
@@ -163,6 +175,7 @@ section {
     padding: 10px;
     margin-left: 0;
     margin-bottom: 10px;
+    width: fit-content;
 }
 
 .project-name h3 {
@@ -185,4 +198,15 @@ section {
     display:inline-flex;
     list-style: none;
 
+}
+
+.container {
+    position: relative;
+}
+.project {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color:#388e8d;
+    color: #06344e;
 }
