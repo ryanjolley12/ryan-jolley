@@ -135,7 +135,6 @@ section {
     align-items: center;
     margin: 10px;
     padding-left: 10px;
-    
 }
 
 .big-picture img {
@@ -149,5 +148,41 @@ section {
     margin top: 15px;
     margin bottom: 15px;
     display: inline;
+}
+
+.photo-gallery {
+    padding: 15px auto;
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.project {
+    background-color: #388e8d;
+    padding: 10px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.project-name h3 {
+    color: #06344e;
+    padding top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.project-type h4 {
+    color: #06344e;
+}
+
+.contacts {
+    padding: 20px;
+    border-left: solid 10px #06344e
+}
+.contacts ul li {
+    color: #06344e;
+    display:inline-flex;
+    list-style: none;
 
 }
