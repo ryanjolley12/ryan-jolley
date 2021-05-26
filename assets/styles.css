@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #cddeee;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.box {
+/* header section */
+
+header {
+    padding: 10px 0 10px 0;
+    background-color: #2a2a2a;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 9998;
+}
+.box-header {
     background-color: #388e8d;
     height: 5px auto;
     width: fit-content;
@@ -18,40 +28,20 @@ body {
     flex-wrap:wrap;
 }
 
-.box-hero {
-    position: absolute;
-    bottom: 20px;
-    left: 0px;
-    background-color:#388e8d;
-    color: #06344e;
-}
-
-header {
-    padding: 20px 35px;
-    background-color: #2a2a2a;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-}
-
-header h1 {
+.box-header h1 a {
     font-weight: bold;
     font-size: 50px;
-    color:#063f4e;
-    margin: 0;
+    color:#06344e;
+    margin: 5px;
     display: flex;
+    z-index: 9999;
+    text-decoration: none;
+    opacity: 1.0;
 }
 
 header a {
     color: #388e8d;
     border-bottom: #388e8d;
-}
-
-header nav {
-    float: right;
-    margin: 7px 0;
 }
 
 header nav ul {
@@ -64,12 +54,54 @@ header nav ul {
 
 header nav ul li {
     display: inline;
+    justify-content: right;
 }
 
 header nav ul li a {
-    font-size: 1.55vw;
-    margin: 0 20px;
+    font-size: 1.6vw;
+
 }
+
+/* hero section*/
+
+.box-hero {
+    position: absolute;
+    right: 0px;
+    justify-content: center;
+    background-color:#388e8d;
+    color: #06344e;
+}
+
+.hero {
+    background-image: url(../assets/images/2.png);
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 20%;
+}
+.box-hero h2 {
+    color: #06344e;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+}
+
+about me section
+
+my work section
+
+contact me section
+
+resume section 
+
+footer section  */
+
+
+
+
+
 
 footer {
     background-color: #2a2a2a;
@@ -91,18 +123,7 @@ footer div {
     text-align: right;
 }
 
-.hero {
-    background-image: url(../assets/images/2.png);
-    background-size: cover;
-    height: 300px;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-}
-.box h2 {
-    color: #06344e;
-    font-weight: bold;
-}
+
 
 section {
     padding: 60px;
