@@ -88,19 +88,7 @@ header nav ul li a {
     padding: 5px;
 }
 
-about me section
-
-my work section
-
-contact me section
-
-resume section 
-
-section {
-    padding: 60px;
-}
-
-.flex-row {
+.flex-column {
     display: flex;
 }
 
