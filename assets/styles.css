@@ -39,6 +39,12 @@ section {
     margin-right: 20px;
 }
 
+.flex-container h2 {
+    font-size: 2em;
+    color: #06344e;
+    text-align: right;
+}
+
 .flex-container-nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -59,6 +65,7 @@ section {
     justify-content: space-between;
     align-items:flex-start;
     color: #388e8d;
+    padding: 2em;
 }
 
 section {
@@ -84,26 +91,30 @@ section {
     top: 50%;
 }
 
+.child-container {
+    border-left: solid 10px #06344e;
+    padding: 20px;
+}
 
 .about-me-bio {
     /* display: flex; */
-    width: 100%;
-    
-
+    width: 100%
 }
 
 .subhead {
-    color: #388e8d;
-    display: flex;
-    /* flex-wrap: wrap;
-    flex-direction: column; */
+    left: 10%;
 }
 
+.subhead h2 {
+    padding-right: 10%;
+}
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 700%;
+    border-left: solid 10px #06344e;
+    padding: 20px;
 }
 
 .projects-child {
@@ -115,6 +126,10 @@ section {
   
 }
 
+.large-image {
+    width: 80%;
+    height: 100px;
+}
 .responsive {
     width: 100%;
     height: auto;
