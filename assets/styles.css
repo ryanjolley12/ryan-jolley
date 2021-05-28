@@ -11,26 +11,61 @@ body {
 }
 
 header {
+    padding: 20px 35px;
+    background-color:#2a2a2a;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
 
+header h1 {
+    color: #388e8d;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    color: #388e8d;
 }
 
 .flex-container-nav {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-end;
 
 }
 
 .flex-container-nav ul {
+    list-style-type: none;
+}
+
+.flex-container-nav li {
+    display: inline;
 
 }
 
-.flex-container-nav ul li {
-
-}
-
-.flex-container-nav ul li a {
+.flex-container-nav a {
+    display: block;
+    padding: 8px;
+    color: #388e8d;
 
 }
 
 .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
 
 }
 
@@ -67,7 +102,39 @@ header {
 }
 
 .projects ul li a {
-    
+
+}
+
+.surf-report {
+
+}
+
+.text-block {
+
+}
+
+.text-block h3 {
+
+}
+
+.text-block p {
+
+}
+
+.led-wall {
+
+}
+
+.calculator {
+
+}
+
+.pastel-puzzles {
+
+}
+
+.run-buddy {
+
 }
 
 .contact-me {
@@ -106,14 +173,14 @@ header {
 
 /* header section */
 
-header {
+/* header {
     padding: 10px 0 10px 0;
     background-color: #2a2a2a;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-    z-index: 9998;
+    z-index: 9998; */
 }
 
 /* .header {
@@ -139,7 +206,7 @@ header {
     opacity: 1.0;
 }
 
-header a {
+/* header a {
     color: #388e8d;
     border-bottom: #388e8d;
 }
@@ -160,11 +227,11 @@ header nav ul li {
 header nav ul li a {
     font-size: 1.6vw;
 
-}
+} */
 
 /* hero section*/
 
-.box-hero {
+/* .box-hero {
     position: absolute;
     right: 0px;
     justify-content: center;
@@ -289,4 +356,4 @@ header nav ul li a {
     left: 0px;
     background-color:#388e8d;
     color: #06344e;
-}
+} */
