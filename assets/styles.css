@@ -97,10 +97,6 @@ section {
     width: 100%
 }
 
-.subhead {
-    left: 10%;
-}
-
 .subhead h2 {
     padding-right: 10%;
     text-align: right;
@@ -175,10 +171,11 @@ section {
 .text-block {
     position: absolute;
     background-color: #388e8d;
-    color: #2a2a2a;
+    opacity: .75;
+    color: #06344e;
     padding: 10px 5px;
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 
@@ -204,18 +201,6 @@ section {
     text-decoration: none;
     padding-left: 3%;
 }
-
-.resume {
-
-}
-
-
-
-
-
-
-
-
 
 
 
