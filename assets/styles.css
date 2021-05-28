@@ -11,26 +11,16 @@ body {
 }
 
 header {
-    padding: 20px 35px;
-    background-color:#2a2a2a;
-    justify-content: space-between;
-    flex-wrap: wrap;
-     position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
+    padding: 20px;
+    background-color: #2a2a2a;
+    text-align: left;
+   
 }
 
 header h1 {
+    display: inline-block;
+    font-size: 48px;
     color: #388e8d;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 0;
-    display: flex;
 }
 
 header a {
@@ -39,26 +29,16 @@ header a {
 }
 
 .flex-container-nav {
-    flex-wrap: wrap;
-    display: flex;
-    align-items: flex-end;
-
+    font-size: 20px;
+    float: right;
+    padding-top: 15px;
+    margin-right: 20px;
 }
 
-.flex-container-nav ul {
+.flex-container-nav ul li {
     list-style-type: none;
-}
-
-.flex-container-nav li {
-    display: inline;
-
-}
-
-.flex-container-nav a {
-    display: block;
-    padding: 8px;
-    color: #388e8d;
-
+    display: inline-block;
+    margin-left: 25px;
 }
 
 .flex-container {
@@ -69,12 +49,24 @@ header a {
 
 }
 
-.hero-image {
-
+section {
+    padding: 200px;
 }
 
-.hero-subhead {
+.hero {
+    background-image: url('../assets/images/2.png');
+    background-size: cover;
+    background-position: center;
+  }
 
+.hero-subhead {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2a2a2a;
+    color: #388e8d;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .about-me {
@@ -82,6 +74,10 @@ header a {
 }
 
 .about-me-bio {
+    color: #388e8d;
+    display: flex;
+    flex-wrap: wrap;
+
 
 }
 
@@ -93,48 +89,40 @@ header a {
 
 }
 
-.projects ul {
-
-}
-
-.projects ul li {
-
-}
-
-.projects ul li a {
-
-}
-
 .surf-report {
+    position: relative;
+
 
 }
 
 .text-block {
-
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2a2a2a;
+    color: #388e8d;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.text-block h3 {
-
-}
-
-.text-block p {
-
-}
 
 .led-wall {
+    position: relative;
 
 }
 
 .calculator {
+    position: relative;
 
 }
 
 .pastel-puzzles {
+    position: relative;
 
 }
 
 .run-buddy {
-
+    position: relative;
 }
 
 .contact-me {
@@ -186,7 +174,7 @@ header a {
 /* .header {
 
 } */
-
+/* 
 .box-header {
     background-color: #388e8d;
     height: 5px auto;
@@ -204,7 +192,7 @@ header a {
     z-index: 9999;
     text-decoration: none;
     opacity: 1.0;
-}
+} */
 
 /* header a {
     color: #388e8d;
