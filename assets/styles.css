@@ -106,8 +106,6 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 700%;
-
-
 }
 
 .projects-child {
@@ -140,30 +138,11 @@ section {
 }
 
 
-.led-wall {
-    position: relative;
-
-}
-
-.calculator {
-    position: relative;
-
-}
-
-.pastel-puzzles {
-    position: relative;
-
-}
-
-.run-buddy {
-    position: relative;
-}
-
-.contact-me {
-
-}
-
 .contacts {
+    font-size: 20px;
+    float: right;
+    padding-top: 15px;
+    margin-right: 20px;
 
 }
 
@@ -172,11 +151,16 @@ section {
 }
 
 .contacts ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
 
 }
 
 .contacts ul li a {
-
+    color: #388e8d;
+    background-color: #2a2a2a;
+    border-bottom:5px solid #388e8d;
 }
 
 .resume {
