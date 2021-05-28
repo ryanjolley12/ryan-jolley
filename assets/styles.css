@@ -20,11 +20,11 @@ header {
 header h1 {
     display: inline-block;
     font-size: 48px;
-    color: #388e8d;
+    color: #06344e
 }
 
 header a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #388e8d;
 }
 
@@ -45,6 +45,12 @@ header a {
     list-style-type: none;
     display: inline-block;
     margin-left: 25px;
+}
+
+.box {
+    left: 0;
+    background-color:#388e8d;
+
 }
 
 .flex-left {
@@ -100,6 +106,7 @@ section {
 .subhead h2 {
     padding-right: 10%;
     text-align: right;
+    font-size: 4em;
 }
 
 .subhead ul {
