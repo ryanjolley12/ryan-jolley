@@ -231,23 +231,31 @@ section {
  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
  @media screen and (max-width: 980px) {
 
-
-    header nav ul li a {
-      font-size: 20px;
-    }
-
     .flex-container {
         flex-direction: column;
+        display: flex;
+        color: #388e8d;
+        padding: 20px;
     }
 
-    .subhead {
-        flex: 1 100%;
-        text-align: center;
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        border-left: solid 5px #06344e;
+        margin: auto;
+        width: 85%;
+        box-sizing: border-box;
+        padding: .5em;
     }
 
-  
-    .projects-child {
-      flex: 0 70%;
+    .hero h2 {
+        position: absolute;
+        background-color: #2a2a2a;
+        color: #388e8d;
+        padding-left: 20px;
+        padding-right: 20px;
+        right: 0;
+        font-size: 2.5em;
     }
  
 }
@@ -255,68 +263,62 @@ section {
   /* MQ for tablets and down */
   @media screen and (max-width: 768px) {
     section {
-      padding: 30px 15px;
+         
+    .flex-container {
+        flex-direction: column;
+        display: flex;
+        color: #388e8d;
+        padding: 20px;
     }
 
-    .subhead h2 {
-      flex: 1 100%;
-      text-align: center;
-      width: 100%;
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        border-left: solid 5px #06344e;
+        margin: auto;
+        width: 85%;
+        box-sizing: border-box;
+        padding: .5em;
     }
 
-    .about-me-bio {
-      flex: 2 100%;
-      text-align: center;
-      justify-content: center;
-    }
-
-    .projects-child {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px
-    }
-
-    .projects-child-large {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px
-      }
-
-    .projects-child-large img {
-        width:50%;
-    }
-
-    .step-text {
-      flex: 100%;
+    .hero h2 {
+        position: absolute;
+        background-color: #2a2a2a;
+        color: #388e8d;
+        padding-left: 20px;
+        padding-right: 20px;
+        right: 0;
+        font-size: 2.5em;
     }
   }
   /*MQ phones and smaller */
   @media screen and (max-width: 575px) {
-   
-    .subhead {
-      width: 95%;
-    }
-    .about-me-bio {
-      width: 100%;
-    }
-    .projects-child-large {
-        flex: 0 100%;
-    }
-
-
-
-    .projects-child {
-      flex: 0 100%;
-    }
+ 
     .flex-container {
-      text-align: center;
+        flex-direction: column;
+        display: flex;
+        color: #388e8d;
+        padding: 20px;
     }
-    .contacts > * {
-      flex: 0 100%;
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        border-left: solid 5px #06344e;
+        margin: auto;
+        width: 85%;
+        box-sizing: border-box;
+        padding: .5em;
     }
-    .contact-form {
-      order: 3;
+
+    .hero h2 {
+        position: absolute;
+        background-color: #2a2a2a;
+        color: #388e8d;
+        padding-left: 20px;
+        padding-right: 20px;
+        right: 0;
+        font-size: 2.5em;
     }
+
   }
