@@ -14,6 +14,10 @@ header {
     padding: 20px 20px 20px 0;
     background-color: #2a2a2a;
     text-align: left;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 9999;
    
 }
 
@@ -107,7 +111,6 @@ section {
 }
 
 .about-me-bio {
-    /* display: flex; */
     width: 100%;
     margin-bottom: 1.5em;
 }
@@ -137,7 +140,7 @@ section {
     margin: auto;
     width: 85%;
     box-sizing: border-box;
-    padding: .5em;
+    padding: 50px;
 }
 
 .projects-child {
@@ -167,25 +170,45 @@ section {
 .projects-child-large img {
     border: solid 10px #06344e;
     height: 300px;
+    width: 100%;
+    opacity: .8;
 }
 .projects-child img {
     border: solid 10px #06344e;
     height: 300px;
+    width: 100%;
+    opacity: .8;
+}
+.projects-child-large img:hover {
+    opacity: 1;
 }
 
+.projects-child img:hover {
+    opacity: 1;
+}
+
+.projects-child-large img a {
+    width: auto;
+}
+
+.overlay {
+    position: relative
+}
+.overlay h3 {
+    position: absolute;
+    background-color: #2a2a2a;
+    color: #388e8d;
+    padding-left: 20px;
+    padding-right: 40px;
+    right: 0;
+    bottom: 20px;
+    font-size: 1.5em;
+}
 
 .large-image {
     width: 80%;
     height: 50px;
 }
-/* .responsive {
-    width: 100%;
-    height: auto;
-} */
-
-/* .surf-report {
-    position: relative;
-} */
 
 .contacts {
     font-size: 20px;
@@ -227,9 +250,9 @@ section {
   ::-webkit-scrollbar-thumb {
     background: #2a2a2a;
     border-radius: 10px;
+  }
 
- /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
- @media screen and (max-width: 980px) {
+  @media screen and (max-width: 980px) {
 
     .flex-container {
         flex-direction: column;
@@ -256,69 +279,83 @@ section {
         padding-right: 20px;
         right: 0;
         font-size: 2.5em;
+    } 
+
+    .subhead h2 {
+        text-align: center;
     }
- 
+
+    .subhead {
+        width: 100%;
+    }
+
+    .contacts {
+        font-size: 20px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    
+    .contacts ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding-left: 1em;
+    
+    }
+    
+    .contacts ul li a {
+        color: #388e8d;
+        list-style-type: none;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: solid 3px #388e8d;
+    }
+/*  
+    .overlay h3 {
+        position: absolute;
+        background-color: #2a2a2a;
+        color: #388e8d;
+        padding-left: 10px;
+        padding-right: 10px;
+        right: 10px;
+        bottom: 10px;
+        font-size: .5em;
+    } */
 }
 
-  /* MQ for tablets and down */
-  @media screen and (max-width: 768px) {
-    section {
-         
-    .flex-container {
-        flex-direction: column;
-        display: flex;
-        color: #388e8d;
-        padding: 20px;
-    }
+@media screen and (max-width: 500px) {
 
     .projects {
-        display: flex;
-        flex-wrap: wrap;
-        border-left: solid 5px #06344e;
-        margin: auto;
-        width: 85%;
-        box-sizing: border-box;
-        padding: .5em;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: solid 5px #06344e;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5em;
     }
 
-    .hero h2 {
+
+    .projects-child img {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-child-large img {
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay h3 {
         position: absolute;
         background-color: #2a2a2a;
         color: #388e8d;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
         right: 0;
-        font-size: 2.5em;
+        bottom: 10px;
+        font-size: 1em;
     }
-  }
-  /*MQ phones and smaller */
-  @media screen and (max-width: 575px) {
- 
-    .flex-container {
-        flex-direction: column;
-        display: flex;
-        color: #388e8d;
-        padding: 20px;
-    }
-
-    .projects {
-        display: flex;
-        flex-wrap: wrap;
-        border-left: solid 5px #06344e;
-        margin: auto;
-        width: 85%;
-        box-sizing: border-box;
-        padding: .5em;
-    }
-
-    .hero h2 {
-        position: absolute;
-        background-color: #2a2a2a;
-        color: #388e8d;
-        padding-left: 20px;
-        padding-right: 20px;
-        right: 0;
-        font-size: 2.5em;
-    }
-
-  }
+}
