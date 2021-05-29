@@ -99,7 +99,7 @@ section {
 }
 
 .child-container {
-    border-left: solid 8px #06344e;
+    border-left: solid 5px #06344e;
     padding: 20px;
     margin: auto;
     width: 85%;
@@ -133,11 +133,11 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    border-left: solid 9px #06344e;
+    border-left: solid 5px #06344e;
     margin: auto;
     width: 85%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: .5em;
 }
 
 .projects-child {
@@ -156,12 +156,21 @@ section {
 
 .projects-child h2 {
     position: absolute;
-    background-color: #2a2a2a;
-    color: #388e8d;
+    color: #06344e;
+    background-color: #388e8d;
     padding-left: 20px;
     padding-right: 20px;
     right: 0;
     top: 50%;
+}
+
+.projects-child-large img {
+    border: solid 10px #06344e;
+    height: 300px;
+}
+.projects-child img {
+    border: solid 10px #06344e;
+    height: 300px;
 }
 
 .large-image {
@@ -180,13 +189,12 @@ section {
 
 .text-block {
     position: absolute;
-    background-color: #388e8d;
-    opacity: .85;
-    color: #06344e;
-    padding: 10px 5px;
+    color: #cddeee;
     text-align: center;
+    align-items: center;
     font-weight: bold;
-    margin-left: 20px;
+    color: #06344e;
+    background-color: #388e8d;
 }
 
 
@@ -214,3 +222,85 @@ section {
     text-decoration: none;
     border-bottom: solid 3px #388e8d;
 }
+
+ /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+ @media screen and (max-width: 980px) {
+
+
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+
+    .subhead {
+      width: 80%;
+    }
+
+    .projects-child {
+      flex: 0 70%;
+    }
+ 
+  }
+
+  /* MQ for tablets and down */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+
+    .subhead h2 {
+      flex: 1 100%;
+      text-align: center;
+      width: 100%;
+    }
+
+    .about-me-bio {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .projects-child {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px
+    }
+
+    .projects-child-large {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px
+      }
+
+    .step-text {
+      flex: 100%;
+    }
+  }
+  /*MQ phones and smaller */
+  @media screen and (max-width: 575px) {
+   
+    .subhead {
+      width: 95%;
+    }
+    .about-me-bio {
+      width: 100%;
+    }
+    .projects-child-large {
+        flex: 0 100%;
+    }
+
+    .projects-child {
+      flex: 0 100%;
+    }
+    .flex-container {
+      text-align: center;
+    }
+    .contacts > * {
+      flex: 0 100%;
+    }
+    .contact-form {
+      order: 3;
+    }
+  }
