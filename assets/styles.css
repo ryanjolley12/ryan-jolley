@@ -173,6 +173,7 @@ section {
     height: 300px;
 }
 
+
 .large-image {
     width: 80%;
     height: 50px;
@@ -185,18 +186,6 @@ section {
 /* .surf-report {
     position: relative;
 } */
-
-
-.text-block {
-    position: absolute;
-    color: #cddeee;
-    text-align: center;
-    align-items: center;
-    font-weight: bold;
-    color: #06344e;
-    background-color: #388e8d;
-}
-
 
 .contacts {
     font-size: 20px;
