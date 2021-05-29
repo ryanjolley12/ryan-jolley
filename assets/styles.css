@@ -140,7 +140,7 @@ section {
     margin: auto;
     width: 85%;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 10px 50px 10px 50px;
 }
 
 .projects-child {
